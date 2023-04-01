@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create a Post</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="actions.js"></script>
+  </head>
+  <body>
+
+    <!-- Nav Bar -->
+
+    <nav>
+        <div class="logo">
+          <h3>Newton School<br>Doubt Forum</h3>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    
+    <form>
+      <h2>Create a Post</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="category">Category:</label>
+      <select id="category" name="category">
+        <option value="News">DSA</option>
+        <option value="Opinion">Web</option>
+        <option value="Sports">React</option>
+        <option value="Entertainment">Other</option>
+      </select><br>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea><br>
+
+      <button type="submit">Create Post</button>
+    </form>
+
+    <div id="posts"></div>
+
+    <template id="post-template">
+      <div class="card">
+        <h2></h2>
+        <p class="category"></p>
+        <p class="email"></p>
+        <p class="message"></p>
+        <button class="reply-btn">Reply</button>
+        <div class="replies"></div>
+      </div>
+    </template>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3 id="about">About Us</h3>
+            <p>"Passive Prodegies" - The term "Passive Prodigies" suggests that a coding team is composed of members who are not actively contributing to the team's progress or success. This implies that other team members are not taking an active role in coding or software development, and are instead relying on the efforts of a single individual who is putting in the effort. It may also indicate that team members are not providing constructive feedback or participating in code reviews, which could result in slower progress and lower-quality software.</p>
+          </div>
+          <div class="col">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="https://github.com/vijayakabajo" target="_blank">Github</a></li>
+              <li><a href="https://twitter.com/elonmusk" target="_blank">Twitter</a></li>
+              <li><a href="https://www.instagram.com/johncena/" target="_blank">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3 id="contact">Contact Us</h3>
+            <p>Sona Towers, 3rd Floor, No.2, 26, 27 and 3 Krishna Nagar Industrial Area, Hosur Rd,<br>Bengaluru, Karnataka 560029<br>Phone: +91 9876543210<br>Email: vijayakabajo@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <p>&copy; 2023 Passive Prodigies. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
